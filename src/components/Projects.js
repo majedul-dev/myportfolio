@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react"
 import Project from "./Project"
+import Title from "./Title"
 
-const Projects = ({ projects }) => {
+const Projects = ({ projects, title }) => {
   const [items, setItems] = useState([])
   const [categories, setCategories] = useState([])
   const [filters, setFilters] = useState({ category: "all" })
@@ -34,6 +35,7 @@ const Projects = ({ projects }) => {
   }
   return (
     <>
+      <Title title={title} />
       <div className="project-category">
         <label>filter by technology</label>
         <select

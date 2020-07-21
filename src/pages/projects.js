@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { graphql } from "gatsby"
-import Title from "../components/Title"
 import Layout from "../components/layout"
 import Projects from "../components/Projects"
 
@@ -12,8 +11,7 @@ const ProjectsPage = ({
   return (
     <Layout>
       <section className="section">
-        <Title title="projects" />
-        <Projects projects={projects} />
+        <Projects projects={projects} title="all projects" />
       </section>
     </Layout>
   )
@@ -27,6 +25,7 @@ export const query = graphql`
         projecturl
         githuburl
         category
+        id
         stack {
           id
           name
