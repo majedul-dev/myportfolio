@@ -2,7 +2,7 @@ import React from "react"
 import Image from "gatsby-image"
 import { FaShareSquare, FaGithub } from "react-icons/fa"
 
-const Project = ({ node: { title, projecturl, githuburl, stack, image } }) => {
+const Project = ({ title, projecturl, githuburl, stack, image }) => {
   return (
     <article className="single-project">
       <div className="image-wrapper">
