@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import Title from "../components/Title"
 import Layout from "../components/Layout"
 import Project from "./project"
@@ -60,7 +60,6 @@ const Projects = () => {
     }
     setFilters(value)
   }
-  console.log(categories)
   return (
     <Layout>
       <section className="section">

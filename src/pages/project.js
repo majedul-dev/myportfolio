@@ -1,6 +1,6 @@
 import React from "react"
 import Image from "gatsby-image"
-import { FaGithubSquare, FaShareSquare, FaGithub } from "react-icons/fa"
+import { FaShareSquare, FaGithub } from "react-icons/fa"
 
 const Project = ({
   node: { title, projecturl, githuburl, stack, image, category },
