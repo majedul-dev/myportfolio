@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Title from "../components/Title"
-import Layout from "../components/Layout"
 import Project from "./project"
+import Layout from "../components/layout"
 
 const Projects = () => {
   const data = useStaticQuery(graphql`
