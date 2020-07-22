@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-import Layout from "../components/Layout"
+import Layout from "../components/layout"
 import Title from "../components/Title"
 import Image from "gatsby-image"
 const About = ({
