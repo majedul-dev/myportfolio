@@ -1,8 +1,9 @@
 import React from "react"
 import Image from "gatsby-image"
+import { Link } from "gatsby"
 import { FaShareSquare, FaGithub } from "react-icons/fa"
 
-const Project = ({ title, projecturl, githuburl, stack, image }) => {
+const Project = ({ title, projecturl, githuburl, stack, image, slug }) => {
   return (
     <article className="single-project">
       <div className="image-wrapper">
@@ -32,7 +33,7 @@ const Project = ({ title, projecturl, githuburl, stack, image }) => {
             <FaGithub />
           </i>
         </a>
-        <a href="#">About Project</a>
+        <Link to={`/projects/${slug}`}>About Project</Link>
         <a href="" target="_blank" rel="noreferrer">
           source code
         </a>

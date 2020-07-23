@@ -7,7 +7,7 @@ const contact = () => {
       <section className="contact-page">
         <article className="contact-form">
           <h3>get in touch</h3>
-          <form method="POST">
+          <form action="https://formspree.io/xknqbkbk" method="POST">
             <div className="form-group">
               <input
                 type="text"
