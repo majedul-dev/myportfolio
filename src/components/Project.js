@@ -28,13 +28,13 @@ const Project = ({ title, projecturl, githuburl, stack, image, slug }) => {
         </div>
       </div>
       <div className="single-project-footer">
-        <a href={githuburl} target="blank">
+        <a href="https://github.com/majedul-dev" target="blank">
           <i className="fab fa-github">
             <FaGithub />
           </i>
         </a>
         <Link to={`/projects/${slug}`}>About Project</Link>
-        <a href="" target="_blank" rel="noreferrer">
+        <a href={githuburl} target="_blank" rel="noreferrer">
           source code
         </a>
       </div>
