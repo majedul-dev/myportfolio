@@ -10,7 +10,6 @@ const About = ({
   },
 }) => {
   const { title, stacks, bio, image } = about[0]
-  console.log(stacks)
 
   return (
     <Layout>

@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import { graphql, Link } from "gatsby"
-import ReactMarkdown from "react-markdown"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 const project = ({ data }) => {

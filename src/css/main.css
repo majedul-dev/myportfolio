@@ -212,7 +212,7 @@ p {
   */
 
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -220,7 +220,7 @@ p {
   display: flex;
   align-items: center;
   z-index: 200;
-  background: var(--clr-white);
+  background-color: var(--clr-white) !important;
 }
 .nav-center {
   width: 90vw;
@@ -1172,10 +1172,11 @@ p {
   padding: 0.75rem 1rem;
   border: none;
   margin-bottom: 1.25rem;
+  text-transform: none;
+
   background: var(--clr-grey-10);
   border-radius: var(--radius);
-  text-transform: uppercase;
-  letter-spacing: var(--spacing);
+  letter-spacing: 0.1rem;
 }
 .form-control::placeholder {
   font-family: var(--ff-primary);

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react"
 import Project from "./Project"
 import Title from "./Title"
+import { Link } from "gatsby"
 
-const Projects = ({ projects, title }) => {
+const Projects = ({ projects, title, showLink }) => {
   const [items, setItems] = useState([])
   const [categories, setCategories] = useState([])
   const [filters, setFilters] = useState({ category: "all" })
@@ -35,28 +36,39 @@ const Projects = ({ projects, title }) => {
   }
   return (
     <>
-      <Title title={title} />
-      <div className="project-category">
-        <label>filter by technology</label>
-        <select
-          name="category"
-          id="category"
-          value={filters.category}
-          onChange={handleItems}
-          className="text-capitalize"
-        >
-          {categories.map((category, index) => (
-            <option key={index} value={category}>
-              {category}
-            </option>
-          ))}
-        </select>
-      </div>
-      <div className="projects section-center">
-        {items.map((project, index) => {
-          return <Project key={index} {...project} />
-        })}
-      </div>
+      <section className="section">
+        <Title title={title} />
+        <div className="project-category">
+          {!showLink && (
+            <>
+              <label>filter by technology</label>
+              <select
+                name="category"
+                id="category"
+                value={filters.category}
+                onChange={handleItems}
+                className="text-capitalize"
+              >
+                {categories.map((category, index) => (
+                  <option key={index} value={category}>
+                    {category}
+                  </option>
+                ))}
+              </select>
+            </>
+          )}
+        </div>
+        <div className="projects section-center">
+          {items.map((project, index) => {
+            return <Project key={index} {...project} />
+          })}
+        </div>
+        {showLink && (
+          <Link to="/projects" className="btn center-btn">
+            Projects
+          </Link>
+        )}
+      </section>
     </>
   )
 }

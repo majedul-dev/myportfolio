@@ -3,7 +3,7 @@ import {
   FaFacebookSquare,
   FaLinkedin,
   FaDribbbleSquare,
-  FaBehanceSquare,
+  // FaBehanceSquare,
   FaTwitterSquare,
 } from "react-icons/fa"
 
