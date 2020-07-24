@@ -4,6 +4,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Layout from "../components/layout"
 import Title from "../components/Title"
 import Image from "gatsby-image"
+import SEO from "../components/seo"
 const About = ({
   data: {
     allContentfulAboutMePage: { nodes: about },
@@ -13,6 +14,7 @@ const About = ({
 
   return (
     <Layout>
+      <SEO title="About Me" />
       <section className="about-page">
         <div className="section-center about-center">
           <Image fluid={image.fluid} className="about-img" />

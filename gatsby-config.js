@@ -3,9 +3,11 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Majedul's Portfolio`,
+    description: `To show my work or skills this site is plays the gaint role in my life. Here displays about all of my informations based on web development process.`,
+    author: `@majedul`,
+    twitterUsername: "majedul-dev",
+    siteUrl: "https://myportfoliomz.netlify.app",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -22,7 +24,6 @@ module.exports = {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
-        // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
