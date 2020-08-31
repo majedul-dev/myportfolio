@@ -35,41 +35,39 @@ const Projects = ({ projects, title, showLink }) => {
     setFilters(value)
   }
   return (
-    <>
-      <section className="section">
-        <Title title={title} />
-        <div className="project-category">
-          {!showLink && (
-            <>
-              <label>filter by technology</label>
-              <select
-                name="category"
-                id="category"
-                value={filters.category}
-                onChange={handleItems}
-                className="text-capitalize"
-              >
-                {categories.map((category, index) => (
-                  <option key={index} value={category}>
-                    {category}
-                  </option>
-                ))}
-              </select>
-            </>
-          )}
-        </div>
-        <div className="projects section-center">
-          {items.map((project, index) => {
-            return <Project key={index} {...project} />
-          })}
-        </div>
-        {showLink && (
-          <Link to="/projects" className="btn center-btn">
-            all projects
-          </Link>
+    <section>
+      <Title title={title} />
+      <div className="project-category">
+        {!showLink && (
+          <>
+            <label>filter by technology</label>
+            <select
+              name="category"
+              id="category"
+              value={filters.category}
+              onChange={handleItems}
+              className="text-capitalize"
+            >
+              {categories.map((category, index) => (
+                <option key={index} value={category}>
+                  {category}
+                </option>
+              ))}
+            </select>
+          </>
         )}
-      </section>
-    </>
+      </div>
+      <div className="projects section-center">
+        {items.map((project, index) => {
+          return <Project key={index} {...project} />
+        })}
+      </div>
+      {showLink && (
+        <Link to="/projects" className="btn center-btn">
+          all projects
+        </Link>
+      )}
+    </section>
   )
 }
 
