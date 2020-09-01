@@ -21,7 +21,7 @@ const Projects = ({ projects, title, showLink }) => {
   useEffect(() => {
     setItems(projects)
     setCategories(getCategories(projects))
-  }, [])
+  }, [projects])
 
   const handleItems = e => {
     let value = e.target.value
@@ -36,12 +36,12 @@ const Projects = ({ projects, title, showLink }) => {
   }
   return (
     <>
-      <section>
+      <section className={showLink ? "section" : ""}>
         <Title title={title} />
         <div className="project-category">
           {!showLink && (
             <>
-              <label>filter by technology</label>
+              <label htmlFor="category">filter by technology</label>
               <select
                 name="category"
                 id="category"

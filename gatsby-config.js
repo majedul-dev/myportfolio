@@ -4,15 +4,18 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Majedul's Portfolio`,
-    description: `To show my work or skills this site is plays the gaint role in my life. Here displays about all of my informations based on web development process.`,
-    author: `@majedul`,
-    twitterUsername: "majedul-dev",
-    siteUrl: "https://myportfoliomz.netlify.app",
+    description:
+      "The modern web application is the way for grow any sort of business. We are here to provide quality service about web application development. A fast and responsive website is the ideal for any comparative company or business.",
+    author: "majedul",
+    twitterUsername: "@mazedul_dev",
+    image: "/twitter-img.png",
+    siteUrl: "https://majedulislam.co",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

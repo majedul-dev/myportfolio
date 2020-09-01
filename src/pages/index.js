@@ -10,7 +10,7 @@ const IndexPage = ({ data }) => {
   } = data
   return (
     <Layout>
-      <SEO title="Home" description="landing page" />
+      <SEO title="Home" />
       <Hero />
       <Projects projects={projects} title="latest projects" showLink />
     </Layout>

@@ -1,10 +1,12 @@
 import React from "react"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
+
 import { graphql, Link } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 const project = ({ data }) => {
-  const { aboutproject } = data.contentfulProjects
+  const { aboutproject, title } = data.contentfulProjects
   const options = {
     renderNode: {
       "embedded-asset-block": node => {
@@ -16,6 +18,7 @@ const project = ({ data }) => {
   }
   return (
     <Layout>
+      <SEO title={title} />
       <section className="blog-template">
         <div className="section-center">
           <article className="blog-content">
