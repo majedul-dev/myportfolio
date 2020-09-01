@@ -36,7 +36,7 @@ function SEO({ description, title }) {
       <meta name="twitter:creator" content={twitterUsername} />
       <meta name="twitter:title" content={siteTitle} />
       <meta name="twitter:description" content={siteDesc} />
-      <meta name="twitter:image" content={`${siteUrl}`} />
+      <meta name="twitter:image" content={`${siteUrl}${image}`} />
     </Helmet>
   )
 }
