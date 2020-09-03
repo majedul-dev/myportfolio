@@ -12,6 +12,7 @@ const query = graphql`
         siteUrl
         siteTitle: title
         twitterUsername
+        keywords
       }
     }
   }
@@ -25,11 +26,17 @@ function SEO({ description, title }) {
     siteUrl,
     image,
     twitterUsername,
+    keywords,
   } = site.siteMetadata
 
   return (
     <Helmet htmlAttributes={{ lang: "en" }} title={`${title} | ${siteTitle}`}>
       <meta name="description" content={description || siteDesc} />
+      <meta name="keywords" content={keywords} />
+      <meta
+        name="google-site-verification"
+        content="SoTg-gsJVK6B0BjWDBge4c-NgGLR_xDuRekxi8ySK58"
+      />
       <meta name="image" content={image} />
       {/* twitter cards */}
       <meta name="twitter:card" content="summary_large_image" />

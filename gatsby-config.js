@@ -10,6 +10,8 @@ module.exports = {
     twitterUsername: "@mazedul_dev",
     image: "/twitter-img.png",
     siteUrl: "https://majedulislam.co",
+    keywords:
+      "web development, web design, web application development, web application, web application design and development, html5, css3, jsvascript, react js, node js, express js, mern stack project, mern stack application, mern stack web application",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
