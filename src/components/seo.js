@@ -12,13 +12,13 @@ const query = graphql`
         siteUrl
         siteTitle: title
         twitterUsername
-        keywords
+        siteKeywords
       }
     }
   }
 `
 
-function SEO({ description, title }) {
+function SEO({ title, description, keywords }) {
   const { site } = useStaticQuery(query)
   const {
     siteDesc,
@@ -26,18 +26,26 @@ function SEO({ description, title }) {
     siteUrl,
     image,
     twitterUsername,
-    keywords,
+    siteKeywords,
   } = site.siteMetadata
 
   return (
     <Helmet htmlAttributes={{ lang: "en" }} title={`${title} | ${siteTitle}`}>
+      <link rel="canonical" href={`${siteUrl}/${title}`} />
       <meta name="description" content={description || siteDesc} />
-      <meta name="keywords" content={keywords} />
+      <meta name="keywords" content={keywords || siteKeywords} />
       <meta
         name="google-site-verification"
         content="SoTg-gsJVK6B0BjWDBge4c-NgGLR_xDuRekxi8ySK58"
       />
       <meta name="image" content={image} />
+      {/* Open Graph meta tags */}
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content={siteTitle} />
+      <meta property="og:description" content={siteDesc} />
+      <meta property="og:image" content={`${siteUrl}${image}`} />
+      <meta property="og:url" content={siteUrl} />
+      <meta property="og:site_name" content="webdev" />
       {/* twitter cards */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content={twitterUsername} />

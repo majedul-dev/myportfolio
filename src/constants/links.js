@@ -13,11 +13,16 @@ const data = [
   },
   {
     id: 3,
+    text: "blogs",
+    url: "/blogs",
+  },
+  {
+    id: 4,
     text: "about",
     url: "/about",
   },
   {
-    id: 4,
+    id: 5,
     text: "contact",
     url: "/contact",
   },

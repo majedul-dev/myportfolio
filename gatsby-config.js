@@ -5,13 +5,13 @@ module.exports = {
   siteMetadata: {
     title: `Majedul's Portfolio`,
     description:
-      "The modern web application is the way for grow any sort of business. We are here to provide quality service about web application development. A fast and responsive website is the ideal for any comparative company or business.",
+      "The modern web application is the way for grow any sort of business. A fast and responsive user friendly website is the ideal for any comparative company or business. We are here to provide quality service about web application design and development.",
     author: "majedul",
     twitterUsername: "@mazedul_dev",
     image: "/twitter-img.png",
     siteUrl: "https://majedulislam.co",
-    keywords:
-      "web development, web design, web application development, web application, web application design and development, html5, css3, jsvascript, react js, node js, express js, mern stack project, mern stack application, mern stack web application",
+    siteKeywords:
+      " web development, web design, web application development, web app development, web application, website design, web application design and development, html5, css3, jsvascript, react js, node js, express js, mern stack project, mern stack application, mern stack web application",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -729,11 +729,6 @@ p {
   flex-grow: 1;
 }
 .project-info h4 {
-  /* font-size: 1.2rem;
-  color: var(--clr-grey-1);
-  letter-spacing: var(--spacing);
-  font-weight: 600;
-  margin: 1rem 0; */
   font-size: 1.25rem;
   letter-spacing: 2px;
   font-weight: 500;
@@ -743,7 +738,6 @@ p {
 }
 .project-info .stack-items {
   display: flex;
-  /* margin-top: -1.25rem; */
   padding: 0 1rem;
   margin-bottom: 2rem;
   text-align: center;
@@ -758,9 +752,6 @@ p {
   display: block;
   margin: 0.25rem 0.25rem 0;
 }
-/* .project-info .stack-items p:nth-child(1) {
-    margin-right: 0.8rem;
-  } */
 
 .project-category {
   display: flex;
@@ -824,6 +815,9 @@ p {
   }
 }
 
+.blog-section {
+  background: var(--clr-white);
+}
 .blog {
   display: block;
   margin-bottom: 2rem;
