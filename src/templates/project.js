@@ -6,7 +6,7 @@ import { graphql, Link } from "gatsby"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 const project = ({ data }) => {
-  const { aboutproject, title } = data.contentfulProjects
+  const { aboutproject, title, slug } = data.contentfulProjects
   const options = {
     renderNode: {
       "embedded-asset-block": node => {
@@ -18,7 +18,7 @@ const project = ({ data }) => {
   }
   return (
     <Layout>
-      <SEO title={title} />
+      <SEO title={`projects/${slug}`} />
       <section className="blog-template">
         <div className="section-center">
           <article className="blog-content">
@@ -37,6 +37,7 @@ export const query = graphql`
   query GetSingleProject($slug: String) {
     contentfulProjects(slug: { eq: $slug }) {
       title
+      slug
       aboutproject {
         json
       }
