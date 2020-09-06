@@ -18,7 +18,7 @@ const query = graphql`
   }
 `
 
-function SEO({ title, description, keywords }) {
+function SEO({ title, description, keywords, slug }) {
   const { site } = useStaticQuery(query)
   const {
     siteDesc,
@@ -31,7 +31,7 @@ function SEO({ title, description, keywords }) {
 
   return (
     <Helmet htmlAttributes={{ lang: "en" }} title={`${title} | ${siteTitle}`}>
-      <link rel="canonical" href={`${siteUrl}/${title}`} />
+      <link rel="canonical" href={`${siteUrl}/${slug}`} />
       <meta name="description" content={description || siteDesc} />
       <meta name="keywords" content={keywords || siteKeywords} />
       <meta

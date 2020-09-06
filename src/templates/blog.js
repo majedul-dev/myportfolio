@@ -19,7 +19,8 @@ const blog = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title={`blogs/${slug}`}
+        title={title}
+        slug={`blogs/${slug}`}
         description={description}
         keywords={keywords}
       />

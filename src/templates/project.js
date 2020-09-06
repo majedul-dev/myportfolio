@@ -18,7 +18,7 @@ const project = ({ data }) => {
   }
   return (
     <Layout>
-      <SEO title={`projects/${slug}`} />
+      <SEO title={title} slug={`projects/${slug}`} />
       <section className="blog-template">
         <div className="section-center">
           <article className="blog-content">
