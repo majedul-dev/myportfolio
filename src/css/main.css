@@ -69,6 +69,9 @@ body {
   font-size: 0.875rem;
   margin-top: 5rem;
 }
+main {
+  min-height: 80vh;
+}
 ul {
   list-style-type: none;
 }
@@ -126,7 +129,9 @@ p {
   }
 }
 /*  global classes */
-
+.text-center {
+  text-align: center;
+}
 .btn {
   text-transform: uppercase;
   background: var(--clr-primary-5);
@@ -702,7 +707,7 @@ p {
   text-align: center;
   justify-content: center;
   align-items: center;
-  min-height: 100%;
+  min-height: 22vh;
 }
 .content-wrapper .fa-share-square {
   font-size: 1.2rem;
@@ -789,6 +794,7 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  z-index: 999;
 }
 .single-project-footer a {
   color: var(--clr-primary-5);
@@ -957,6 +963,9 @@ p {
   About Page
   ===============
   */
+.about-section {
+  background: var(--clr-white);
+}
 .about-page {
   padding: 7rem 0;
 }

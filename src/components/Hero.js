@@ -31,6 +31,15 @@ const Hero = () => {
             <Link to="/contact" className="btn">
               contact me
             </Link>
+            <a
+              href="https://drive.google.com/file/d/1B4vfl92s-pPuJCm7RVutiAAGsxYzsW8E/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+              className="btn"
+              style={{ marginLeft: "1rem" }}
+            >
+              My Resume
+            </a>
             <SocialLinks />
           </div>
         </article>

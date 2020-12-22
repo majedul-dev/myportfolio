@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     title: `Majedul's Portfolio`,
     description:
-      "The modern web application is the way for grow any sort of business. A fast and responsive user friendly website is the ideal for any comparative company or business. We are here to provide quality service about web application design and development.",
+      "I am full-stack web application developer with Node.js. I have beend doing web development about four years. I am comfortable to work with MERN(mongoDB, express, React, Node js) technologys. Web development is my passion. Since I had started learning web design and development I was very eager to learn more and more technologies. Long time I had passed on web development for learning.",
     author: "majedul",
     twitterUsername: "@mazedul_dev",
     image: "/twitter-img.png",

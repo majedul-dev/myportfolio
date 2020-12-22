@@ -59,9 +59,10 @@ const Projects = ({ projects, title, showLink }) => {
           )}
         </div>
         <div className="projects section-center">
-          {items.map((project, index) => {
-            return <Project key={index} {...project} />
-          })}
+          {items &&
+            items.map((project, index) => {
+              return <Project key={index} {...project} />
+            })}
         </div>
         {showLink && (
           <Link to="/projects" className="btn center-btn">

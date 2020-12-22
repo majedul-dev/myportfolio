@@ -3,19 +3,23 @@ import SEO from "../components/seo"
 import Layout from "../components/layout"
 import Hero from "../components/Hero"
 import Projects from "../components/Projects"
-import Blogs from "../components/Blogs"
+// import Blogs from "../components/Blogs"
+import Services from "../components/Services"
+import About from "../components/About"
 
 const IndexPage = ({ data }) => {
   const {
     allContentfulProjects: { nodes: projects },
-    allContentfulBlogs: { nodes: blogs },
+    // allContentfulBlogs: { nodes: blogs },
   } = data
   return (
     <Layout>
       <SEO title="Home" />
       <Hero />
+      <Services />
+      <About />
       <Projects projects={projects} title="latest projects" showLink />
-      <Blogs blogs={blogs} title="latest blogs" showLink />
+      {/* <Blogs blogs={blogs} title="latest blogs" showLink /> */}
     </Layout>
   )
 }
