@@ -8,12 +8,12 @@ const About = () => {
       <Title title="About Me" />
       <div className="section-center">
         <p className="text-center">
-          I am full-stack web application developer with Node.js. I have beend
-          doing web development about four years. I am comfortable to work with
-          MERN(mongoDB, express, React, Node js) technologys. Web development is
-          my passion. Since I had started learning web design and development I
-          was very eager to learn more and more technologies. Long time I had
-          passed on web development for learning.
+          I am a full-stack web application developer. I have been doing web
+          development for four years now. I have a great passion for coding in
+          general. I have good hands-on experience with modern web application
+          design and development. I would love to have some challenges for
+          development. I have been done many advanced projects recently, some of
+          them including in my projects section you shall get a touch in blew.
         </p>
       </div>
       <Link to="/about" className="btn center-btn">
