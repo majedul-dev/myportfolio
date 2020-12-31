@@ -900,7 +900,8 @@ p {
   ===============
   */
 .footer {
-  height: 7rem;
+  /* height: 7rem; */
+  padding: 2rem 0 1rem 0;
   background: #222;
   text-align: center;
   display: grid;
@@ -924,6 +925,9 @@ p {
 }
 .footer .social-link:hover {
   color: var(--clr-primary-5);
+}
+.footer-contacts > p {
+  color: var(--clr-primary-10);
 }
 /*
   ===============
