@@ -5,19 +5,19 @@ export default [
   {
     id: 3,
     icon: <AiOutlineAntDesign className="service-icon" />,
-    title: "UI/UX design",
-    text: `I will scatch for a web application by following the core fundamentals of UI/UX design. The tools that I'm going to use for prototyping that is Figma or Adobe XD`,
+    title: "Front End",
+    text: `I do front-end with HTML, CSS, and JavaScript for Static websites. But I am an expert on React/Redux for front-end development with complete On-Page SEO optimized. I will provide the most priority on Responsive design and form validation and also other most important staff.`,
   },
   {
     id: 2,
     icon: <FaSketch className="service-icon" />,
-    title: "web design",
-    text: `Front-end design is required before jump into the back-end development so I will do responsive and modern design for any website`,
+    title: "Back End",
+    text: `I am an expert for back-end development on Node/Express Js. I will create Rest APIs for website/web-application such as e-commerce and blog website. The APIs will have an authentication system for users and admin. An admin will control the application with a protected route.`,
   },
   {
     id: 1,
     icon: <FaCode className="service-icon" />,
-    title: "web development",
-    text: `I am a JavaScript developer and I'm comfortable with Node.js. I will use MongoDB or Firebase for the database. Afterall once it is ready for deployment then I'll make it end with deployment`,
+    title: "Full-stack Development",
+    text: `I do full-stack development with MERN stacks. For full-stack projects, the project will be divided into two parts for distinguishing the price one for the front-end and another for the back-end. The application shall have a CMS for admin. With content upload, and ready to use the complete application will be handover to the customer.`,
   },
 ]
