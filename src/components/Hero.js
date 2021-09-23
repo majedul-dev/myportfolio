@@ -32,7 +32,7 @@ const Hero = () => {
               contact me
             </Link>
             <a
-              href="https://drive.google.com/file/d/1B4vfl92s-pPuJCm7RVutiAAGsxYzsW8E/view?usp=sharing"
+              href="https://drive.google.com/file/d/1M4-EXvpwmSTTSDrpUgvDU_gB9QtRTLma/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="btn"
